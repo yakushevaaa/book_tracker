@@ -1,0 +1,41 @@
+.error__background {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/icons/books.svg) no-repeat 50% 0;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+
+  &__number {
+    color: #f59e0b;
+    font-size: 48px;
+    font-family: "Outfit-SemiBold";
+  }
+
+  &__subtitle {
+    color: #0d0842;
+    font-family: "Outfit-SemiBold";
+    font-size: 32px;
+  }
+
+  &__text {
+    color: #0d08426a;
+    font-size: 20px;
+    font-family: "Outfit-Bold";
+  }
+
+  &__link {
+    padding: 16px 30px;
+    background-color: var(--accent-color);
+    color: white;
+    font-family: "Outfit-Regular";
+    border-radius: 4px;
+  }
+}

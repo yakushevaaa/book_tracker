@@ -1,0 +1,94 @@
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.background {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #875b1a62;
+}
+
+.modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 8px;
+  border: 2px solid var(--accent-color);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 35px;
+    font-family: "Outfit-SemiBold";
+    color: var(--accent-color);
+  }
+
+  &__delete-btn {
+    padding: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    // border: 1px solid var(--accent-color);
+  }
+
+  &__input {
+    padding: 10px 30px;
+    font-family: "Outfit-Light";
+    background-color: #c5a37214;
+    border-radius: 8px;
+    font-size: 15px;
+
+    &:focus {
+      outline: 1px solid var(--accent-color);
+    }
+  }
+
+  &__genre-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__genre {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Outfit-Light";
+    transition: all 0.3s;
+
+    &--selected {
+      background: var(--accent-color);
+      color: white;
+    }
+  }
+
+  &__add-btn {
+    padding: 10px 0;
+    background-color: var(--accent-color);
+    color: white;
+    font-family: "Outfit-Regular";
+    font-size: 16px;
+    border-radius: 4px;
+
+    &:active {
+      background-color: #7c531a;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.book-list {
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+  gap: 52px;
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 70px;
+
+  &__title {
+    font-family: "Outfit-SemiBold";
+    font-size: 30px;
+  }
+
+  &__count {
+    font-family: "Outfit-Light";
+    font-size: 18px;
+  }
+}

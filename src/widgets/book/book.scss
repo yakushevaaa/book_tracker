@@ -1,0 +1,67 @@
+.book {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 8px;
+    border: 1px solid var(--stroke-color);
+    border-radius: 16px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &__img-container {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    top: 8px;
+    border-radius: 8px;
+    background-color: var(--stroke-color);
+    padding: 4px;
+    cursor: pointer;
+
+    &:nth-child(3) {
+      left: 8px;
+    }
+
+    &:nth-child(2) {
+      right: 8px;
+    }
+
+    &--read {
+      background-color: var(--button-bg-color);
+    }
+  }
+
+  &__img {
+    height: 160px;
+    width: 160px;
+    border-radius: 16px;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: "Outfit-Bold";
+    font-size: 22px;
+  }
+
+  &__genre {
+    font-family: "Outfit-Light";
+    font-size: 16px;
+  }
+
+  &__author {
+    font-family: "Outfit-Light";
+    font-size: 16px;
+  }
+}
